@@ -81,7 +81,7 @@ def scrape():
 
         hemisphere_image_urls = {
             'title': title,
-            'img_url': f'https://astrogeology.usgs.gov/{link}',
+            'img_url': f'https://astrogeology.usgs.gov/{link}'
         }
 
     #Store data in a dictionary
