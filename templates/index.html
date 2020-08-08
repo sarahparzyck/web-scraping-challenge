@@ -19,12 +19,13 @@
     <h3>{{ mars.news_title }}</h3>
     <p>{{ mars.news_paragraph }}</p>
 
-    <h4>Mars Featured Image</h4>
-    <img src="{{ mars.featured_image_url }}" alt="Image">
-
-    <h5> Mars Facts: {{ mars.mars_table }}</h5>
-    <h6> Hemispheres: {{ mars.hemisphere_image_urls }}</h6>
-  </div>
+    <h2>Mars Featured Image</h2>
+    <img src="{{ mars.featured_image_url }}" alt="Image" width="650" height="450">
+    <h3>Mars Facts</h3>
+    {{mars.mars_table|safe}}
+    <a href="{{mars.mars_table}}"></a>
+    <h2> Hemispheres: </h2>
+    <img src='{{ mars.hemisphere_image_urls.img_url }}'/>
   </div>
 </body>
 
